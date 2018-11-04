@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Elementary Tasks</title>
+	<script src="src/task1.js"></script>
+	<script src="src/task2.js"></script>
+	<script src="src/task4.js"></script>
+	<script src="src/task6.js"></script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>
+				<h2>Task 1</h2>
+				<p>Вывести шахматную доску с заданными размерами высоты и ширины.</p>
+				<form id="t1" name="t1">
+					<input text="text" id="n" name="n" placeholder="К-во строк"/><br/>
+					<input text="text" id="m" name="m" placeholder="К-во столбцов"/><br/>
+					<input text="text" id="s" name="s" placeholder="Символ"/> <br/><br/>
+					<textarea disabled id="out" name="out" rows="10" cols="45"></textarea><br/><br/>
+					<input type="button" value="Отобразить" onClick="GetDataChessBoard();" />
+				</form>
+			</td>
+
+			<td>
+				<h2>Task 2</h2>
+				<p>Есть два конверта со сторонами (a,b) и (c,d).<br/> Требуется определить, можно ли один конверт вложить в другой. </p>
+				<form id="t2" name="t2">
+					<input text="text" id="a" name="a" placeholder="Сторона а"/><br/>
+					<input text="text" id="b" name="b" placeholder="Сторона b"/><br/>
+					<input text="text" id="c" name="c" placeholder="Сторона c"/> <br/>
+					<input text="text" id="d" name="d" placeholder="Сторона d"/><br/><br/>
+					<textarea disabled id="out3" name="out3" cols="45"></textarea><br/><br/>
+					<input type="button" value="Проверить" onClick="GetDataEnvelopes();" />
+				</form>	
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<h2>Task 4</h2>
+				<p>Проверить является ли число или его часть палиндромом. Числа меньшие, чем 10 палиндромом не считать.</p>
+				<form id="reg" name="reg">
+					<input text="text" id="name" name="name"placeholder="Палиндром" /><br/><br/>
+					<textarea disabled id="out2" name="out2" rows="5" cols="45"></textarea><br/><br/>
+					<input type="button" value="Проверить" onClick="GetPalindrom();" />
+				</form>
+			</td>
+
+			<td>
+				<h2>Task 6</h2>
+				<p>Вывести ряд длиной n, состоящий из натуральных чисел, квадрат которых не меньше заданного m.</p>
+				<form id="t6" name="t6">
+					<input text="text" id="l" name="l" placeholder="n"/><br/><br/>
+					<input text="text" id="min" name="min" placeholder="m"/><br/><br/>
+					<textarea disabled id="out1" name="out1" cols="45"></textarea><br/><br/>
+					<input type="button" value="Вывести ряд" onClick="GetRowOfNumbers();" />
+				</form>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
